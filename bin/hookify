@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var GithubHook = require('../lib/github').GithubHook;
+
+var hook = new GithubHook({
+  name: 'github',
+  type: 'github',
+  debug: true
+});
+
+hook.start();
